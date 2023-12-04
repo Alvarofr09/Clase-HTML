@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formularios</title>
+	</head>
+	<body>
+		<h1>Formularios en HTML</h1>
+		<form action="#" method="get">
+			<label for="nombre">Tu nombre:</label>
+			<input type="text" name="nombre" id="nombre" />
+
+			<input
+				type="email"
+				name="correo"
+				id="correo"
+				placeholder="Correo electronico"
+			/>
+			<input
+				type="password"
+				name="contraseña"
+				id="contraseña"
+				placeholder="Contraseña"
+			/>
+			<input
+				type="number"
+				name="telefono"
+				id="telefono"
+				placeholder="Telefono"
+			/>
+			<input type="submit" value="Enviar" />
+			<input type="reset" value="Resetear" />
+		</form>
+
+		<form action="">
+			<p>Elige tu genero</p>
+			<input type="radio" name="genero" id="maculino" />
+			<label for="maculino">Masculino</label>
+			<input type="radio" name="genero" id="femenino" />
+			<label for="femenino">Femenino</label>
+			<input type="radio" name="genero" id="otro" />
+			<label for="otro">Otro</label>
+
+			<br />
+
+			<p>Elige tu vehiculo</p>
+			<input type="checkbox" name="vehiculo1" id="coche" checked />
+			<label for="coche">Coche</label><br />
+			<input type="checkbox" name="vehiculo2" id="moto" />
+			<label for="moto">Moto</label><br />
+			<input type="checkbox" name="vehiculo3" id="bici" />
+			<label for="bici">Bici</label><br />
+
+			<input type="file" name="archivo" id="archivo" />
+
+			<label for="cumpleaños">Tu cumpleaños</label>
+			<input type="date" name="cumpleaños" id="cumpleaños" />
+
+			<p>Elige tu pais</p>
+			<select name="pais" id="">
+				<optgroup label="Europa">
+					<option value="ES">España</option>
+					<option value="IT">Italia</option>
+					<option value="FR">Francia</option>
+				</optgroup>
+
+				<optgroup label="America">
+					<option value="AR">Argentina</option>
+					<option value="VE">Venezuela</option>
+				</optgroup>
+			</select>
+		</form>
+
+		<form action="">
+			<fieldset>
+				<legend>Datos personales</legend>
+				<input
+					type="text"
+					name="nombre"
+					id="nombre-fieldset"
+					placeholder="nombre"
+				/>
+				<input
+					type="email"
+					name="correo"
+					id="correo-fieldset"
+					placeholder="Correo"
+				/>
+				<textarea
+					cols="30"
+					rows="5"
+					placeholder="Describe yourself here..."
+				></textarea>
+				<button type="submit">Enviar Formulario</button>
+			</fieldset>
+		</form>
+	</body>
+</html>

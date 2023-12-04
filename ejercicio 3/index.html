@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 3</title>
+	</head>
+	<body>
+		<h1>Formulario de Registro</h1>
+
+		<form action="">
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre" id="nombre" />
+
+			<br /><br />
+
+			<label for="apellidos">Apellidos:</label>
+			<input type="text" name="apellidos" id="apellidos" />
+
+			<br /><br />
+
+			<label for="">Sexo:</label>
+			<input type="radio" name="genero" id="hombre" value="h" />
+			<label for="hombre">Hombre</label>
+			<input type="radio" name="genero" id="mujer" value="m" />
+			<label for="mujer">Mujer</label>
+
+			<br /><br />
+
+			<label for="correo">Correo:</label>
+			<input type="email" name="correo" id="correo" />
+
+			<br /><br />
+
+			<input
+				type="checkbox"
+				name="notificaciones"
+				id="notificaciones"
+				checked
+			/>
+			<label for="notificaciones"
+				>Deseo recibir información sobre novedades y ofertas</label
+			>
+			<br /><br />
+
+			<input type="checkbox" name="condiciones" id="condiciones" />
+			<label for="condiciones"
+				>Declaro haber leido y aceptar las condiciones generales del programa y
+				la normativa sobre proteccion de datos</label
+			>
+			<br /><br />
+
+			<button type="submit">Enviar</button>
+		</form>
+	</body>
+</html>
